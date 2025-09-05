@@ -16,6 +16,7 @@ After:
 ## Known Issues
 
 Please report all issues to https://github.com/RedCMD/Rascal-Syntax-Highlighter/issues
+* stupid [Display Name](https://github.com/microsoft/vsmarketplace/issues/1413)
 
 ## For more information
 
