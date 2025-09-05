@@ -1,0 +1,12 @@
+.vscode/**
+.vscode-test/**
+tests/**
+.github/**
+
+assets/rascal-logo.svg
+assets/After.png
+assets/Before.png
+
+.gitignore
+vsc-extension-quickstart.md
+syntaxes/test.tmLanguage.json

@@ -1,0 +1,23 @@
+name: Run Tests on Commit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.tmLanguage.json"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Install Dependencies # vscode-tmgrammar-test
+        run: | # shell
+          npm i
+
+      - name: Run Tests # vscode-tmgrammar-snap
+        run: | # shell
+          npm test

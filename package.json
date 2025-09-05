@@ -1,0 +1,81 @@
+{
+	"name": "rascal-syntax-highlighter",
+	"displayName": "Rascal Syntax Highlighting",
+	"description": "Syntax Highlighting for Rascal",
+	"publisher": "RedCMD",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.103.0"
+	},
+	"icon": "assets/rascal-logo-icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RedCMD/Rascal-Syntax-Highlighter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/RedCMD/Rascal-Syntax-Highlighter/issues"
+	},
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=RedCMD.rascal-syntax-highlighter",
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"scripts": {
+		"package": "vsce package",
+		"publish": "vsce publish",
+		"test": "vscode-tmgrammar-snap \"./tests/**/*.rsc\"",
+		"update-test": "npm run test -- --updateSnapshot"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "rascal",
+				"aliases": [
+					"Rascal",
+					"rascal"
+				],
+				"extensions": [
+					".rsc"
+				],
+				"icon": {
+					"light": "./assets/rascal-logo-icon.svg",
+					"dark": "./assets/rascal-logo-icon.svg"
+				},
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "rascal",
+				"scopeName": "source.rascal",
+				"path": "./syntaxes/rascal.tmLanguage.json",
+				"unbalancedBracketScopes": [
+					"punctuation.definition.section.replacement.rascal",
+					"keyword.operator.associativity.rascal",
+					"keyword.operator.arithmetic.rascal",
+					"keyword.operator.lookaround.rascal",
+					"keyword.operator.comparison.rascal",
+					"punctuation.definition.type.rascal",
+					"keyword.operator.rascal",
+					"constant.character.escape.rascal"
+				]
+			},
+			{
+				"scopeName": "markdown.rascal.codeblock",
+				"path": "./syntaxes/markdown-codeblock.tmLanguage.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.rascal": "rascal"
+				},
+				"injectTo": [
+					"text.html.markdown"
+				]
+			}
+		]
+	},
+	"devDependencies": {
+		"vscode-tmgrammar-test": "^0.1.3"
+	}
+}
