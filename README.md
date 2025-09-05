@@ -9,9 +9,9 @@ Syntax Highlighting for Rascal
 * Compatible with Github
 
 Before:
-![Before](https://raw.githubusercontent.com/RedCMD/Rascal-Syntax-Highlighter/main/images/Before.png)
+![Before](https://raw.githubusercontent.com/RedCMD/Rascal-Syntax-Highlighter/master/assets/Before.png)
 After:
-![After](https://raw.githubusercontent.com/RedCMD/Rascal-Syntax-Highlighter/main/images/After.png)
+![After](https://raw.githubusercontent.com/RedCMD/Rascal-Syntax-Highlighter/master/assets/After.png)
 
 ## Known Issues
 
