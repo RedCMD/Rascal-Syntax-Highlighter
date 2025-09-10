@@ -923,7 +923,7 @@
 				{
 					"comment": "TODO: ambiguity with a lot",
 					"match": ":",
-					"name": "entity.name.label.rascal token.debug-token"
+					"name": "entity.name.label.rascal"
 				},
 				{
 					"match": "[-%*+]|<<|>>|(?<![(,:<\\[])/(?![\\])*/>])",

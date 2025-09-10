@@ -671,7 +671,7 @@
 #         ^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
 #          ^^^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal storage.type.basic.int.rascal
 #             ^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
-#              ^ source.rascal entity.name.label.rascal token.debug-token
+#              ^ source.rascal entity.name.label.rascal
 #               ^ source.rascal punctuation.whitespace.rascal
 #                ^^^^^^^^ source.rascal meta.function-call.expression.rascal entity.name.function.rascal
 #                        ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
@@ -743,7 +743,7 @@
 #    ^ source.rascal meta.function.rascal punctuation.whitespace.rascal
 #     ^ source.rascal meta.function.rascal meta.arguments.rascal
 #      ^ source.rascal meta.function.rascal meta.arguments.rascal
-#       ^ source.rascal entity.name.label.rascal token.debug-token
+#       ^ source.rascal entity.name.label.rascal
 #        ^ source.rascal punctuation.whitespace.rascal
 #         ^^^^^^^^ source.rascal meta.function-call.expression.rascal entity.name.function.rascal
 #                 ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
@@ -779,7 +779,7 @@
 #          ^ source.rascal punctuation.terminator.statement.rascal
 >int: 144
 #^^^ source.rascal storage.type.basic.int.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^^^ source.rascal constant.numeric.decimal.rascal
 >
@@ -807,7 +807,7 @@
 #    ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
 #     ^^^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal storage.type.basic.int.rascal
 #        ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
-#         ^ source.rascal entity.name.label.rascal token.debug-token
+#         ^ source.rascal entity.name.label.rascal
 #          ^ source.rascal punctuation.whitespace.rascal
 #           ^ source.rascal meta.square.rascal punctuation.definition.square.begin.rascal
 #            ^ source.rascal meta.square.rascal constant.numeric.decimal.rascal
@@ -844,7 +844,7 @@
 #                         ^ source.rascal punctuation.terminator.statement.rascal
 >int: 16
 #^^^ source.rascal storage.type.basic.int.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^^ source.rascal constant.numeric.decimal.rascal
 >
@@ -873,7 +873,7 @@
 #                         ^ source.rascal punctuation.terminator.statement.rascal
 >int: 105
 #^^^ source.rascal storage.type.basic.int.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^^^ source.rascal constant.numeric.decimal.rascal
 >
@@ -883,7 +883,7 @@
 #           ^ source.rascal constant.numeric.date-time-zone.rascal punctuation.definition.date-time.end.rascal
 >datetime: $2010-07-15$
 #^^^^^^^^ source.rascal storage.type.basic.datetime.rascal
-#        ^ source.rascal entity.name.label.rascal token.debug-token
+#        ^ source.rascal entity.name.label.rascal
 #         ^ source.rascal punctuation.whitespace.rascal
 #          ^ source.rascal constant.numeric.date-time-zone.rascal punctuation.definition.date-time.begin.rascal
 #           ^^^^^^^^^^ source.rascal constant.numeric.date-time-zone.rascal constant.numeric.date.rascal
@@ -897,7 +897,7 @@
 #                              ^ source.rascal punctuation.terminator.statement.rascal
 >datetime: $2010-07-15T07:15:23.123+01:00$
 #^^^^^^^^ source.rascal storage.type.basic.datetime.rascal
-#        ^ source.rascal entity.name.label.rascal token.debug-token
+#        ^ source.rascal entity.name.label.rascal
 #         ^ source.rascal punctuation.whitespace.rascal
 #          ^ source.rascal constant.numeric.date-time-zone.rascal punctuation.definition.date-time.begin.rascal
 #           ^^^^^^^^^^ source.rascal constant.numeric.date-time-zone.rascal constant.numeric.date.rascal
@@ -917,7 +917,7 @@
 #                                    ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >datetime: $2010-07-15T09:15:23.123+03:00$
 #^^^^^^^^ source.rascal storage.type.basic.datetime.rascal
-#        ^ source.rascal entity.name.label.rascal token.debug-token
+#        ^ source.rascal entity.name.label.rascal
 #         ^ source.rascal punctuation.whitespace.rascal
 #          ^ source.rascal constant.numeric.date-time-zone.rascal punctuation.definition.date-time.begin.rascal
 #           ^^^^^^^^^^ source.rascal constant.numeric.date-time-zone.rascal constant.numeric.date.rascal
@@ -931,7 +931,7 @@
 #             ^ source.rascal punctuation.terminator.statement.rascal
 >bool: true
 #^^^^ source.rascal storage.type.basic.bool.rascal
-#    ^ source.rascal entity.name.label.rascal token.debug-token
+#    ^ source.rascal entity.name.label.rascal
 #     ^ source.rascal punctuation.whitespace.rascal
 #      ^^^^ source.rascal constant.language.bool.rascal
 >DT.justDate;
@@ -941,7 +941,7 @@
 #           ^ source.rascal punctuation.terminator.statement.rascal
 >datetime: $2010-07-15$
 #^^^^^^^^ source.rascal storage.type.basic.datetime.rascal
-#        ^ source.rascal entity.name.label.rascal token.debug-token
+#        ^ source.rascal entity.name.label.rascal
 #         ^ source.rascal punctuation.whitespace.rascal
 #          ^ source.rascal constant.numeric.date-time-zone.rascal punctuation.definition.date-time.begin.rascal
 #           ^^^^^^^^^^ source.rascal constant.numeric.date-time-zone.rascal constant.numeric.date.rascal
@@ -953,7 +953,7 @@
 #           ^ source.rascal punctuation.terminator.statement.rascal
 >datetime: $T09:15:23.123+03:00$
 #^^^^^^^^ source.rascal storage.type.basic.datetime.rascal
-#        ^ source.rascal entity.name.label.rascal token.debug-token
+#        ^ source.rascal entity.name.label.rascal
 #         ^ source.rascal punctuation.whitespace.rascal
 #          ^ source.rascal constant.numeric.date-time-zone.rascal punctuation.definition.date-time.begin.rascal
 #           ^^^^^^^^^^^^^ source.rascal constant.numeric.date-time-zone.rascal constant.numeric.time.rascal
@@ -966,7 +966,7 @@
 #          ^ source.rascal punctuation.terminator.statement.rascal
 >int: 20
 #^^^ source.rascal storage.type.basic.int.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^^ source.rascal constant.numeric.decimal.rascal
 >
@@ -979,7 +979,7 @@
 #      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >int: 13
 #^^^ source.rascal storage.type.basic.int.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^^ source.rascal constant.numeric.decimal.rascal
 >"The value of N is <N>";
@@ -992,7 +992,7 @@
 #                       ^ source.rascal punctuation.terminator.statement.rascal
 >str: "The value of N is 13"
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^^^^^^^^^^^^^^^^^^^ source.rascal string.quoted.double.rascal
@@ -1018,7 +1018,7 @@
 #                           ^ source.rascal punctuation.terminator.statement.rascal
 >str: "The value of N*N is 169"
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^^^^^^^^^^^^^^^^^^^^^^ source.rascal string.quoted.double.rascal
@@ -1058,7 +1058,7 @@
 #                                    ^ source.rascal punctuation.terminator.statement.rascal
 >str: "The value is 169"
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^^^^^^^^^^^^^^^ source.rascal string.quoted.double.rascal
@@ -1103,7 +1103,7 @@
 #                                               ^ source.rascal punctuation.terminator.statement.rascal
 >str: "N is  large "
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^^^^^^^^^^^ source.rascal string.quoted.double.rascal
@@ -1151,7 +1151,7 @@
 #                                                    ^ source.rascal punctuation.terminator.statement.rascal
 >str: "N is  large (13)"
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^^^^^^^^^^^^^^^ source.rascal string.quoted.double.rascal
@@ -1194,7 +1194,7 @@
 #                                          ^ source.rascal punctuation.terminator.statement.rascal
 >str: "before a 1 b a 2 b a 3 b a 4 b after"
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal string.quoted.double.rascal
@@ -1325,7 +1325,7 @@
 #    ^ source.rascal meta.function.rascal meta.arguments.rascal
 #     ^^^ source.rascal meta.function.rascal meta.arguments.rascal storage.type.basic.str.rascal
 #        ^ source.rascal meta.function.rascal meta.arguments.rascal
-#         ^ source.rascal entity.name.label.rascal token.debug-token
+#         ^ source.rascal entity.name.label.rascal
 #          ^ source.rascal punctuation.whitespace.rascal
 #           ^^^^^^^^ source.rascal meta.function-call.expression.rascal entity.name.function.rascal
 #                   ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
@@ -1386,7 +1386,7 @@
 #   ^ source.rascal meta.function.rascal punctuation.whitespace.rascal
 #    ^ source.rascal meta.function.rascal meta.arguments.rascal
 #     ^ source.rascal meta.function.rascal meta.arguments.rascal
-#      ^ source.rascal entity.name.label.rascal token.debug-token
+#      ^ source.rascal entity.name.label.rascal
 #       ^ source.rascal punctuation.whitespace.rascal
 #        ^^^^^^^^ source.rascal meta.function-call.expression.rascal entity.name.function.rascal
 #                ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
@@ -1500,7 +1500,7 @@
 #                            ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.whitespace.rascal
 #                             ^^^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal variable.other.rascal
 #                                ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
-#                                 ^ source.rascal entity.name.label.rascal token.debug-token
+#                                 ^ source.rascal entity.name.label.rascal
 #                                  ^ source.rascal punctuation.whitespace.rascal
 #                                   ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
 #                                    ^ source.rascal meta.tuple.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
@@ -1520,7 +1520,7 @@
 #       ^ source.rascal punctuation.terminator.statement.rascal
 >str: "Jo"
 #^^^ source.rascal storage.type.basic.str.rascal
-#   ^ source.rascal entity.name.label.rascal token.debug-token
+#   ^ source.rascal entity.name.label.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
 #     ^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
 #      ^^ source.rascal string.quoted.double.rascal
@@ -1561,7 +1561,7 @@
 #                            ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.whitespace.rascal
 #                             ^^^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal variable.other.rascal
 #                                ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
-#                                 ^ source.rascal entity.name.label.rascal token.debug-token
+#                                 ^ source.rascal entity.name.label.rascal
 #                                  ^ source.rascal punctuation.whitespace.rascal
 #                                   ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
 #                                    ^ source.rascal meta.tuple.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
@@ -2317,7 +2317,7 @@
 #                             ^^^^^^^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal entity.name.type.rascal
 #                                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                         ^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
-#                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal entity.name.label.rascal token.debug-token
+#                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal entity.name.label.rascal
 #                                           ^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal meta.function-call.expression.rascal entity.name.function.rascal
 #                                               ^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
 #                                                ^ source.rascal meta.function.rascal meta.assign.rascal meta.when.rascal meta.block.rascal meta.set.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
@@ -7731,7 +7731,7 @@
 #                                       ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal punctuation.whitespace.rascal
 #                                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal keyword.operator.arithmetic.rascal
 #                                         ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal meta.qualified-name.rascal variable.other.rascal
-#                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal entity.name.label.rascal token.debug-token
+#                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal entity.name.label.rascal
 #                                           ^^^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal storage.type.basic.str.rascal
 #                                              ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal punctuation.whitespace.rascal
 #                                               ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal meta.qualified-name.rascal variable.other.rascal
@@ -7824,7 +7824,7 @@
 #                                       ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal punctuation.whitespace.rascal
 #                                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal keyword.operator.arithmetic.rascal
 #                                         ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal meta.qualified-name.rascal variable.other.rascal
-#                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal entity.name.label.rascal token.debug-token
+#                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal entity.name.label.rascal
 #                                           ^^^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal storage.type.basic.str.rascal
 #                                              ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal punctuation.whitespace.rascal
 #                                               ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.square.rascal meta.list.rascal meta.qualified-name.rascal variable.other.rascal
@@ -11793,7 +11793,7 @@
 #                               ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal punctuation.whitespace.rascal
 #                                ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal keyword.operator.arithmetic.rascal
 #                                 ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal meta.qualified-name.rascal variable.other.rascal
-#                                  ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal entity.name.label.rascal token.debug-token
+#                                  ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal entity.name.label.rascal
 #                                   ^^^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal meta.function-call.expression.rascal entity.name.function.rascal
 #                                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
 #                                        ^^^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.square.rascal meta.list.rascal meta.parameters.rascal meta.function-call.expression.rascal entity.name.function.rascal
