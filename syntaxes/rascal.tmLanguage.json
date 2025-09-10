@@ -583,7 +583,7 @@
 				{ "include": "#concrete" },
 				{ "include": "#type-type" },
 				{
-					"match": "\\b(?:has|in|notin|mod|join|o)\\b",
+					"match": "\\b(?:has|is|in|notin|mod|join|o)\\b",
 					"name": "keyword.operator.expression.$0.rascal"
 				},
 				{

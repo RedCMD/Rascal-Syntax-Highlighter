@@ -1676,4 +1676,6 @@ int main(
 main(#Foo, "source.foo", |home:///Desktop/foo.json|)
 
 // FOO:
-/*/
+/*/*/
+
+public test bool \safePrio3() = parse(#Exp,"a*b*") is mul;
