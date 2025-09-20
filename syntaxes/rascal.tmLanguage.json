@@ -190,19 +190,19 @@
 							"name": "string.output.result.rascal"
 						},
 						{
-							"begin": "^≫",
+							"begin": "(?:^|\\G)≫",
 							"end": "$",
 							"name": "string.output.stdout.rascal"
 						},
 						{
-							"begin": "^⚠",
+							"begin": "(?:^|\\G)⚠",
 							"end": "$",
 							"name": "string.output.stderr.rascal"
 						}
 					]
 				},
 				"shell": {
-					"begin": "^:",
+					"begin": "(?:^|\\G):",
 					"end": ";|(?<=[-0-9A-Z_a-z])(?!\\s*;)|(?=\\s*$)",
 					"beginCaptures": { "0": { "name": "punctuation.definition.shell.rascal" } },
 					"endCaptures": { "0": { "name": "punctuation.terminator.statement.rascal" } },
