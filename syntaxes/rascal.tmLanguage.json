@@ -3,6 +3,7 @@
 	"name": "Rascal",
 	"scopeName": "source.rascal",
 	"patterns": [
+		{ "//include": "#comment" },
 		{ "include": "#module" },
 		{ "include": "#command" }
 	],
