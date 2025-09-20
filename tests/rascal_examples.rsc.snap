@@ -19817,3 +19817,20 @@
 #                                                      ^^^ source.rascal meta.function.rascal meta.assign.rascal meta.qualified-name.rascal variable.other.rascal
 #                                                         ^ source.rascal meta.function.rascal punctuation.terminator.statement.rascal
 >
+>"'a'
+#^ source.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
+# ^ source.rascal string.quoted.double.rascal invalid.illegal.constant.character.string.rascal
+#  ^ source.rascal string.quoted.double.rascal
+#   ^ source.rascal string.quoted.double.rascal invalid.illegal.constant.character.string.rascal
+>'   '
+#^ source.rascal string.quoted.double.rascal comment.margin.rascal punctuation.definition.margin.rascal
+# ^^^ source.rascal string.quoted.double.rascal
+#    ^ source.rascal string.quoted.double.rascal invalid.illegal.constant.character.string.rascal
+>'   a'a
+#^ source.rascal string.quoted.double.rascal comment.margin.rascal punctuation.definition.margin.rascal
+# ^^^^ source.rascal string.quoted.double.rascal
+#     ^ source.rascal string.quoted.double.rascal invalid.illegal.constant.character.string.rascal
+#      ^^ source.rascal string.quoted.double.rascal
+>"
+#^ source.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
+>

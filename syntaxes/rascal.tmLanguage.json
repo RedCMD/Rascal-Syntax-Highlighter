@@ -2430,7 +2430,7 @@
 			]
 		},
 		"margin": {
-			"begin": "(?:^|\\G)(?=\\s*')",
+			"begin": "(?:^|(?<![\"'>`])\\G)(?=\\s*')",
 			"end": "'",
 			"endCaptures": { "0": { "name": "punctuation.definition.margin.rascal" } },
 			"name": "comment.margin.rascal",

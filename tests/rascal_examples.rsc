@@ -1679,3 +1679,8 @@ main(#Foo, "source.foo", |home:///Desktop/foo.json|)
 /*/*/
 
 public test bool \safePrio3() = parse(#Exp,"a*b*") is mul;
+
+"'a'
+'   '
+'   a'a
+"
