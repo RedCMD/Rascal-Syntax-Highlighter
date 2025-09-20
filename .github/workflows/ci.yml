@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
     paths:
-      - "**.tmLanguage.json"
+      - '**.tmLanguage.json'
 
 jobs:
   release:
