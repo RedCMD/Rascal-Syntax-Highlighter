@@ -32,7 +32,7 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "rascal",
+				"id": "rascalmpl",
 				"aliases": [
 					"Rascal",
 					"rascal"
@@ -49,7 +49,7 @@
 		],
 		"grammars": [
 			{
-				"language": "rascal",
+				"language": "rascalmpl",
 				"scopeName": "source.rascal",
 				"path": "./syntaxes/rascal.tmLanguage.json",
 				"unbalancedBracketScopes": [
@@ -59,7 +59,6 @@
 					"keyword.operator.lookaround.rascal",
 					"keyword.operator.comparison.rascal",
 					"punctuation.definition.type.rascal",
-					"keyword.operator.rascal",
 					"constant.character.escape.rascal"
 				]
 			},
@@ -67,7 +66,7 @@
 				"scopeName": "markdown.rascal.codeblock",
 				"path": "./syntaxes/markdown-codeblock.tmLanguage.json",
 				"embeddedLanguages": {
-					"meta.embedded.block.rascal": "rascal"
+					"meta.embedded.block.rascal": "rascalmpl"
 				},
 				"injectTo": [
 					"text.html.markdown"
