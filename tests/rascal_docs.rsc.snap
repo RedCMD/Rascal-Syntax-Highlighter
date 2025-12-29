@@ -962,8 +962,8 @@
 #                                  ^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
 #                                    ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                     ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                      ^ source.rascal meta.function.rascal meta.block.rascal keyword.operator.transitive-closure.rascal
-#                                       ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                      ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal keyword.operator.transitive-closure.rascal
+#                                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >  qs = [ q.name | q &- m.states ];
 #^^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 #  ^^ source.rascal meta.function.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal
@@ -2619,8 +2619,8 @@
 #                                  ^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
 #                                    ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                     ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                      ^ source.rascal meta.function.rascal meta.block.rascal keyword.operator.transitive-closure.rascal
-#                                       ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                      ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal keyword.operator.transitive-closure.rascal
+#                                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >  qs = [ q.name | q &- m.states ];
 #^^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 #  ^^ source.rascal meta.function.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal
@@ -4710,7 +4710,7 @@
 #                                   ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                    ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                      ^ source.rascal punctuation.terminator.statement.rascal
+#                                      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >rel[int,int] myRel = {<4,5>,<5,6>,<6,4>};
 #^^^ source.rascal meta.type.structured.rascal storage.type.basic.rel.rascal
 #   ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
@@ -4742,7 +4742,7 @@
 #                                     ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                      ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                       ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                        ^ source.rascal punctuation.terminator.statement.rascal
+#                                        ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >myGraph = myRel;
 #^^^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #       ^ source.rascal punctuation.whitespace.rascal
@@ -6072,7 +6072,7 @@
 #                                  ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                   ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                    ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                     ^ source.rascal punctuation.terminator.statement.rascal
+#                                     ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >Graph[str] GS = {<"a", "b">, <"c","d">, <"d", "a">};
 #^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #     ^ source.rascal meta.square.rascal punctuation.definition.square.begin.rascal
@@ -6118,7 +6118,7 @@
 #                                                ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
 #                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                  ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                   ^ source.rascal punctuation.terminator.statement.rascal
+#                                                   ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -6742,7 +6742,7 @@
 #                        ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.whitespace.rascal
 #                         ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 #                          ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                           ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                           ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >  // here we collect type declarations
 #^^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
@@ -6797,7 +6797,7 @@
 #                        ^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal punctuation.definition.interpolation.end.rascal
 #                         ^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
 #                          ^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                           ^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                           ^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >    return s;
 #^^^^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 #    ^^^^^^ source.rascal meta.function.rascal meta.block.rascal meta.function.rascal meta.block.rascal meta.return.rascal keyword.control.return.rascal
@@ -8586,7 +8586,7 @@
 #                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                  ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                   ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                    ^ source.rascal punctuation.terminator.statement.rascal
+#                                                    ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -11752,7 +11752,7 @@
 #   ^ source.rascal meta.assignment.rascal punctuation.whitespace.rascal
 #    ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 #     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#      ^ source.rascal punctuation.terminator.statement.rascal
+#      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -20115,7 +20115,7 @@
 #                              ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                 ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                  ^ source.rascal punctuation.terminator.statement.rascal
+#                                  ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >Traffic<length,daynum>;
 #^^^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #       ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
@@ -20192,7 +20192,7 @@
 #                                                                         ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                          ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                           ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                            ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                            ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >R.street;
 #^ source.rascal meta.qualified-name.rascal variable.other.rascal
 # ^ source.rascal punctuation.accessor.rascal
@@ -20348,7 +20348,7 @@
 #                                        ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                          ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                           ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                            ^ source.rascal punctuation.terminator.statement.rascal
+#                                            ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >R[1];
 #^ source.rascal meta.qualified-name.rascal variable.other.rascal
 # ^ source.rascal meta.square.rascal punctuation.definition.square.begin.rascal
@@ -20422,7 +20422,7 @@
 #                    ^^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                       ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                        ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                         ^ source.rascal punctuation.terminator.statement.rascal
+#                         ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >RR[1];
 #^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #  ^ source.rascal meta.square.rascal punctuation.definition.square.begin.rascal
@@ -20543,7 +20543,7 @@
 #                                         ^^^^^^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                  ^ source.rascal punctuation.terminator.statement.rascal
+#                                                  ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -20830,7 +20830,7 @@
 #          ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #           ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal constant.numeric.decimal.rascal
 #            ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#             ^ source.rascal punctuation.terminator.statement.rascal
+#             ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -21419,7 +21419,7 @@
 #            ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #             ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal constant.numeric.decimal.rascal
 #               ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                ^ source.rascal punctuation.terminator.statement.rascal
+#                ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >{1, 2, *S, 3, 4};
 #^ source.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 # ^ source.rascal meta.block.rascal constant.numeric.decimal.rascal
@@ -22706,7 +22706,7 @@
 #                                                                                 ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                                   ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                    ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                     ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                     ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >traffic<length,daynum>
 #^^^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #       ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
@@ -28203,16 +28203,16 @@
 #     ^^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.whitespace.rascal
 >} else {
 #^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-# ^ source.rascal punctuation.whitespace.rascal
-#  ^^^^ source.rascal meta.statement.else.rascal keyword.control.else.rascal
-#      ^ source.rascal meta.statement.else.rascal punctuation.whitespace.rascal
-#       ^ source.rascal meta.block.rascal punctuation.definition.block.begin.rascal
+# ^ source.rascal meta.assignment.rascal punctuation.whitespace.rascal
+#  ^^^^ source.rascal meta.assignment.rascal meta.statement.else.rascal keyword.control.else.rascal
+#      ^ source.rascal meta.assignment.rascal meta.statement.else.rascal punctuation.whitespace.rascal
+#       ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 >  40;
-#^^ source.rascal meta.block.rascal punctuation.whitespace.rascal
-#  ^^ source.rascal meta.block.rascal constant.numeric.decimal.rascal
-#    ^ source.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#^^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.whitespace.rascal
+#  ^^ source.rascal meta.assignment.rascal meta.block.rascal constant.numeric.decimal.rascal
+#    ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.terminator.statement.rascal
 >}
-#^ source.rascal meta.block.rascal punctuation.definition.block.end.rascal
+#^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
 >if (3 > 2) 
 #^^ source.rascal meta.statement.if.rascal keyword.control.if.rascal
 #  ^ source.rascal meta.statement.if.rascal punctuation.whitespace.rascal
@@ -28847,7 +28847,7 @@
 #                                   ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                    ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                      ^ source.rascal punctuation.terminator.statement.rascal
+#                                      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >T = R;
 #^ source.rascal meta.qualified-name.rascal variable.other.rascal
 # ^ source.rascal punctuation.whitespace.rascal
@@ -31144,7 +31144,7 @@
 #               ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 >};
 #^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-# ^ source.rascal punctuation.terminator.statement.rascal
+# ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -31234,7 +31234,7 @@
 #  ^^^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal comment.line.rascal
 >};
 #^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-# ^ source.rascal punctuation.terminator.statement.rascal
+# ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -33216,7 +33216,7 @@
 #                                                                                                                                     ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.other.location.rascal punctuation.definition.location.end.rascal
 #                                                                                                                                      ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                                                                       ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                                                        ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                                                        ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >// let's first visualize the calls relation to get an overview:
 #^^ source.rascal comment.line.rascal punctuation.definition.comment.rascal
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal comment.line.rascal
@@ -33597,7 +33597,7 @@
 #                                                                                                                                                                                   ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.other.location.rascal punctuation.definition.location.end.rascal
 #                                                                                                                                                                                    ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                                                                                                                     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                                                                                                      ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                                                                                                      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 #                                                                                                                                                                                       ^^^^^^^^^ source.rascal punctuation.whitespace.rascal
 >partOf = {<|proc:///main|, |proc:///Appl|>, <|proc:///a|, |proc:///Appl|>, <|proc:///b|, |proc:///DB|>, <|proc:///c|, |proc:///Lib|>, <|proc:///d|, |proc:///Lib|>};
 #^^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
@@ -33684,7 +33684,7 @@
 #                                                                                                                                                                ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.other.location.rascal punctuation.definition.location.end.rascal
 #                                                                                                                                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                                                                                                  ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                                                                                   ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                                                                                   ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >test bool tstLift() = 
 #^^^^ source.rascal meta.function.rascal storage.modifier.function.test.rascal
@@ -33897,7 +33897,7 @@
 #                                                                                                                                                                                   ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.other.location.rascal punctuation.definition.location.end.rascal
 #                                                                                                                                                                                    ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                                                                                                                     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                                                                                                      ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                                                                                                      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 #                                                                                                                                                                                       ^^^^^^^^^ source.rascal punctuation.whitespace.rascal
 >partOf = {<|proc:///main|, |proc:///Appl|>, <|proc:///a|, |proc:///Appl|>, <|proc:///b|, |proc:///DB|>, <|proc:///c|, |proc:///Lib|>, <|proc:///d|, |proc:///Lib|>};
 #^^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
@@ -33984,7 +33984,7 @@
 #                                                                                                                                                                ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.other.location.rascal punctuation.definition.location.end.rascal
 #                                                                                                                                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                                                                                                  ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                                                                                   ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                                                                                   ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -36338,7 +36338,7 @@
 >	};
 #^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 # ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#  ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#  ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >	return dominators(PRED, ROOT);
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
@@ -36787,7 +36787,7 @@
 >	};
 #^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 # ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#  ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#  ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >	return dominators(PRED, ROOT);
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
@@ -37089,7 +37089,7 @@
 #                           ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                            ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                             ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                              ^ source.rascal punctuation.terminator.statement.rascal
+#                              ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >Graph[int] G3 = {<1,2>, <1,3>, <2,6>, <3,4>, <3,5>, <4,7>, <5,8>, <6,7>, <7,8>};
 #^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #     ^ source.rascal meta.square.rascal punctuation.definition.square.begin.rascal
@@ -37163,7 +37163,7 @@
 #                                                                            ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                             ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                              ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                               ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                               ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >Graph[int] G5 = {<1,2>, <2,3>, <2,4>, <3,6>, <4,2>, <4,5>, <5, 10>, <6, 7>, 
 #^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #     ^ source.rascal meta.square.rascal punctuation.definition.square.begin.rascal
@@ -37271,7 +37271,7 @@
 #                                                  ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                    ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                      ^ source.rascal punctuation.terminator.statement.rascal
+#                                                      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >test bool tstCyclomaticComplexity1() = cyclomaticComplexity(G1) == 1;
 #^^^^ source.rascal meta.function.rascal storage.modifier.function.test.rascal
@@ -37718,7 +37718,7 @@
 #                     ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.whitespace.rascal
 #                      ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 #                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                        ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                        ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >	rel[Stat, Def] out = def;
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 # ^^^ source.rascal meta.function.rascal meta.block.rascal meta.type.structured.rascal storage.type.basic.rel.rascal
@@ -37801,7 +37801,7 @@
 #                                                                                          ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal meta.qualified-name.rascal variable.other.rascal
 #                                                                                           ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal punctuation.definition.square.end.rascal
 #                                                                                            ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >       out = {<s, d> | int s <- statement, Def d <- def[s] + (\in[s] - kill[s])};
 #^^^^^^^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.whitespace.rascal
 #       ^^^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal
@@ -37855,7 +37855,7 @@
 #                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.group.rascal meta.square.rascal punctuation.definition.square.end.rascal
 #                                                                              ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.group.rascal punctuation.definition.group.end.rascal
 #                                                                               ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >	};
 #^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.whitespace.rascal
 # ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.definition.block.end.rascal
@@ -37935,7 +37935,7 @@
 #                                                             ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                              ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                               ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >DEFS = { <1, "i">, <2, "j">, <3, "a">, <4, "i">, <5, "j">, <6, "a">, <7, "i">};
 #^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
@@ -38012,7 +38012,7 @@
 #                                                                           ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
 #                                                                            ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                             ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                              ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                              ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >// let's test the `kill` function:
 #^^ source.rascal comment.line.rascal punctuation.definition.comment.rascal
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal comment.line.rascal
@@ -38664,7 +38664,7 @@
 #                        ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.whitespace.rascal
 #                         ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 #                          ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                           ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                           ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >	rel[Stat, Def] lout = def;
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 # ^^^ source.rascal meta.function.rascal meta.block.rascal meta.type.structured.rascal storage.type.basic.rel.rascal
@@ -38748,7 +38748,7 @@
 #                                                                              ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.group.rascal meta.group.rascal punctuation.definition.group.end.rascal
 #                                                                               ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.group.rascal punctuation.definition.group.end.rascal
 #                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                 ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                 ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >		lout =  {<s, d> | Stat s <- statement,  Stat succ <- successors(pred, s), Def d <- lin[succ] };
 #^^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.whitespace.rascal
 #  ^^^^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal
@@ -38801,7 +38801,7 @@
 #                                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal punctuation.definition.square.end.rascal
 #                                                                                              ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                                                                               ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >	}
 #^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.whitespace.rascal
 # ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.definition.block.end.rascal
@@ -38881,7 +38881,7 @@
 #                                                         ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                          ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                           ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                            ^ source.rascal punctuation.terminator.statement.rascal
+#                                                            ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >DEFS= { <"i",1>,<"j",2>,<"a",3>,<"i",4>,<"j",5>,<"a",6>,<"i",7>}<1,0>;
 #^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #    ^ source.rascal meta.assignment.rascal keyword.operator.assignment.rascal
@@ -38944,12 +38944,12 @@
 #                                                             ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                              ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                               ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
-#                                                                 ^ source.rascal meta.tuple.rascal constant.numeric.decimal.rascal
-#                                                                  ^ source.rascal meta.tuple.rascal punctuation.separator.comma.rascal
-#                                                                   ^ source.rascal meta.tuple.rascal constant.numeric.decimal.rascal
-#                                                                    ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
-#                                                                     ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                ^ source.rascal meta.assignment.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
+#                                                                 ^ source.rascal meta.assignment.rascal meta.tuple.rascal constant.numeric.decimal.rascal
+#                                                                  ^ source.rascal meta.assignment.rascal meta.tuple.rascal punctuation.separator.comma.rascal
+#                                                                   ^ source.rascal meta.assignment.rascal meta.tuple.rascal constant.numeric.decimal.rascal
+#                                                                    ^ source.rascal meta.assignment.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
+#                                                                     ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >USES= {<"m",1>,<"n",2>,<"u1",3>,<"i",4>,<"j",5>,<"u2",6>,<"u3",7>}<1,0>;
 #^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #    ^ source.rascal meta.assignment.rascal keyword.operator.assignment.rascal
@@ -39011,12 +39011,12 @@
 #                                                               ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                  ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
-#                                                                   ^ source.rascal meta.tuple.rascal constant.numeric.decimal.rascal
-#                                                                    ^ source.rascal meta.tuple.rascal punctuation.separator.comma.rascal
-#                                                                     ^ source.rascal meta.tuple.rascal constant.numeric.decimal.rascal
-#                                                                      ^ source.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
-#                                                                       ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                  ^ source.rascal meta.assignment.rascal meta.tuple.rascal punctuation.definition.tuple.begin.rascal
+#                                                                   ^ source.rascal meta.assignment.rascal meta.tuple.rascal constant.numeric.decimal.rascal
+#                                                                    ^ source.rascal meta.assignment.rascal meta.tuple.rascal punctuation.separator.comma.rascal
+#                                                                     ^ source.rascal meta.assignment.rascal meta.tuple.rascal constant.numeric.decimal.rascal
+#                                                                      ^ source.rascal meta.assignment.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
+#                                                                       ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -39927,7 +39927,7 @@
 #                     ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.whitespace.rascal
 #                      ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.begin.rascal
 #                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                        ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                        ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >	rel[Stat, Def] out = def;
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 # ^^^ source.rascal meta.function.rascal meta.block.rascal meta.type.structured.rascal storage.type.basic.rel.rascal
@@ -40009,7 +40009,7 @@
 #                                                                                          ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal meta.qualified-name.rascal variable.other.rascal
 #                                                                                           ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal punctuation.definition.square.end.rascal
 #                                                                                            ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >       out = {<s, d> | int s <- statement, Def d <- def[s] + (\in[s] - kill[s])};
 #^^^^^^^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.whitespace.rascal
 #       ^^^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal
@@ -40063,7 +40063,7 @@
 #                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.group.rascal meta.square.rascal punctuation.definition.square.end.rascal
 #                                                                              ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.group.rascal punctuation.definition.group.end.rascal
 #                                                                               ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >	};
 #^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.whitespace.rascal
 # ^ source.rascal meta.function.rascal meta.block.rascal meta.statement.solve.rascal meta.block.rascal punctuation.definition.block.end.rascal
@@ -40346,7 +40346,7 @@
 #                                                                         ^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal meta.qualified-name.rascal variable.other.rascal
 #                                                                           ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.square.rascal punctuation.definition.square.end.rascal
 #                                                                            ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                             ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                             ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >	// Internal dependencies per statement
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
@@ -40616,7 +40616,7 @@
 #                                                                                           ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                                                                            ^^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
 #                                                                                               ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                                                                                ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >	// Control and data dependence: use-control-def
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
@@ -40761,7 +40761,7 @@
 #                                                                                ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                                  ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                   ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                    ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                    ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >DEFS = {<1, "n">, <2, "i">, <3, "sum">, <4,"product">, <6, "sum">, <7, "product">, <8, "i">};
 #^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
@@ -40836,7 +40836,7 @@
 #                                                                                         ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
 #                                                                                          ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                           ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                            ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                            ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >USES = {<5, "i">, <5, "n">, <6, "sum">, <6,"i">, <7, "product">, <7, "i">, <8, "i">, <9, "sum">, <10, "product">};
 #^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #    ^ source.rascal punctuation.whitespace.rascal
@@ -40931,7 +40931,7 @@
 #                                                                                                              ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
 #                                                                                                               ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                                                                ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                                 ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                                 ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >CONTROLSTATEMENT = { 5 };
 #^^^^^^^^^^^^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #                ^ source.rascal punctuation.whitespace.rascal
@@ -40942,7 +40942,7 @@
 #                     ^ source.rascal meta.assignment.rascal meta.block.rascal constant.numeric.decimal.rascal
 #                      ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.whitespace.rascal
 #                       ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                        ^ source.rascal punctuation.terminator.statement.rascal
+#                        ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -41892,7 +41892,7 @@
 #                                                                  ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                    ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                     ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                      ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                      ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >import vis::Graphs;
 #^^^^^^ source.rascal meta.import.rascal keyword.control.import.rascal
 #      ^ source.rascal meta.import.rascal punctuation.whitespace.rascal
@@ -41971,7 +41971,7 @@
 #                                                                        ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                          ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                           ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                            ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                            ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >rel[Varname, Expr] uses =  {<"q", 5>, <"y", 6>, <"x", 6>, <"z", 10>};
 #^^^ source.rascal meta.type.structured.rascal storage.type.basic.rel.rascal
 #   ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
@@ -42025,7 +42025,7 @@
 #                                                                ^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal constant.numeric.decimal.rascal
 #                                                                  ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.tuple.rascal punctuation.definition.tuple.end.rascal
 #                                                                   ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                    ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                    ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -48458,7 +48458,7 @@
 #                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal string.other.location.rascal
 #                                                                                                       ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal string.other.location.rascal punctuation.definition.location.end.rascal
 #                                                                                                        ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                                                         ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                                                         ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -52004,7 +52004,7 @@
 #                                                                       ^^^^^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal string.quoted.double.rascal
 #                                                                             ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
 #                                                                              ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                                               ^ source.rascal punctuation.terminator.statement.rascal
+#                                                                               ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >pairs = (characters * characters) - {<c,c> | c <- characters};
 #^^^^^ source.rascal meta.qualified-name.rascal variable.other.rascal
 #     ^ source.rascal punctuation.whitespace.rascal
@@ -52035,7 +52035,7 @@
 #                                                 ^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                                  ^^^^^^^^^^ source.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
 #                                                            ^ source.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                                             ^ source.rascal punctuation.terminator.statement.rascal
+#                                                             ^ source.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >
 >
 >
@@ -52922,8 +52922,8 @@
 #                                  ^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
 #                                    ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                     ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                      ^ source.rascal meta.function.rascal meta.block.rascal keyword.operator.transitive-closure.rascal
-#                                       ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                      ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal keyword.operator.transitive-closure.rascal
+#                                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >  qs = [ "<q.name>" | q <- m.states ];
 #^^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 #  ^^ source.rascal meta.function.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal
@@ -53083,8 +53083,8 @@
 #                                  ^^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal meta.qualified-name.rascal variable.other.rascal
 #                                    ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal meta.set.rascal punctuation.whitespace.rascal
 #                                     ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal meta.block.rascal punctuation.definition.block.end.rascal
-#                                      ^ source.rascal meta.function.rascal meta.block.rascal keyword.operator.transitive-closure.rascal
-#                                       ^ source.rascal meta.function.rascal meta.block.rascal punctuation.terminator.statement.rascal
+#                                      ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal keyword.operator.transitive-closure.rascal
+#                                       ^ source.rascal meta.function.rascal meta.block.rascal meta.assignment.rascal punctuation.terminator.statement.rascal
 >  qs = [ "<q.name>" | q <- m.states ];
 #^^ source.rascal meta.function.rascal meta.block.rascal punctuation.whitespace.rascal
 #  ^^ source.rascal meta.function.rascal meta.block.rascal meta.qualified-name.rascal variable.other.rascal

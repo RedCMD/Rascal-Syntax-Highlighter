@@ -1184,7 +1184,7 @@
 				},
 				{
 					"begin": "<<=|[-&*+/?]=|=(?![:=>])",
-					"end": "(?<=[;}])|(?=[]),}])",
+					"end": "(?<=;)|(?<=})(?=\\s*$)|(?=[]),}])",
 					"beginCaptures": { "0": { "name": "keyword.operator.assignment.rascal" } },
 					"name": "meta.assignment.rascal",
 					"patterns": [ { "include": "#statement" } ]
@@ -1700,7 +1700,7 @@
 				{ "include": "#visibility" },
 				{
 					"begin": "\\b(?:java|test|default)\\b|(?=\\bstart\\s*\\[)",
-					"end": ";|(?<=})|(?!\\s*(?:[(;A-Z_a-{]|=(?![=>])|\\bwhen\\b|\\bthrows\\b|/[*/]|$))",
+					"end": ";|(?<=})|(?!\\s*(?:[&(;A-Z_a-{]|=(?![=>])|\\bwhen\\b|\\bthrows\\b|/[*/]|$))",
 					"beginCaptures": { "0": { "name": "storage.modifier.function.$0.rascal" } },
 					"endCaptures": { "0": { "name": "punctuation.terminator.statement.rascal" } },
 					"name": "meta.function.rascal",
@@ -1726,7 +1726,8 @@
 							"patterns": [ { "include": "#type-arg" } ]
 						},
 						{ "include": "#function-definition" },
-						{ "include": "#function-body" }
+						{ "include": "#function-body" },
+						{ "include": "#qualified-name-variable" }
 					]
 				},
 				{

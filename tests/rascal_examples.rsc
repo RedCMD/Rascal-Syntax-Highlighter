@@ -1735,3 +1735,10 @@ test bool dynamicTypesAreAlwaysGeneric(value v) = !(type[value] _ !:= type(typeO
 
 type[value] lub(type[&T] t, type[&T] u)
      = type(lub(t.symbol, u.symbol), ());
+
+
+    messagesNoModule = {*ms.messages[mname] | mname <- ms.messages, (mname notin moduleNames || mname notin ms.moduleLocs)} + toSet(ms.pathConfig.messages);
+
+java &T (value input, loc origin) parser(type[&T] grammar, bool allowAmbiguity=false, int maxAmbDepth=2, bool allowRecovery=false, int maxRecoveryAttempts=30, int maxRecoveryTokens=3, bool hasSideEffects=false, set[Tree(Tree)] filters={}); 
+
+    int (int) f = curry(add, 1); 
