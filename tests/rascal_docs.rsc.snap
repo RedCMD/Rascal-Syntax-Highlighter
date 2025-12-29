@@ -32110,23 +32110,23 @@
 #  ^ source.rascal meta.parameters.rascal constant.numeric.decimal.rascal
 #   ^ source.rascal meta.parameters.rascal punctuation.separator.comma.rascal
 #    ^ source.rascal meta.parameters.rascal punctuation.whitespace.rascal
-#     ^^^ source.rascal meta.parameters.rascal storage.type.basic.int.rascal
-#        ^ source.rascal meta.parameters.rascal punctuation.whitespace.rascal
-#         ^ source.rascal meta.parameters.rascal meta.group.rascal punctuation.definition.group.begin.rascal
-#          ^^^ source.rascal meta.parameters.rascal meta.group.rascal storage.type.basic.int.rascal
-#             ^ source.rascal meta.parameters.rascal meta.group.rascal punctuation.whitespace.rascal
-#              ^ source.rascal meta.parameters.rascal meta.group.rascal meta.qualified-name.rascal variable.other.rascal
-#               ^ source.rascal meta.parameters.rascal meta.group.rascal punctuation.definition.group.end.rascal
-#                ^ source.rascal meta.parameters.rascal meta.block.rascal punctuation.definition.block.begin.rascal
-#                 ^^^^^^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal keyword.control.return.rascal
-#                       ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal punctuation.whitespace.rascal
-#                        ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal constant.numeric.decimal.rascal
-#                         ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal punctuation.whitespace.rascal
-#                          ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal keyword.operator.arithmetic.rascal
-#                           ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal punctuation.whitespace.rascal
-#                            ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal meta.qualified-name.rascal variable.other.rascal
-#                             ^ source.rascal meta.parameters.rascal meta.block.rascal meta.return.rascal punctuation.terminator.statement.rascal
-#                              ^ source.rascal meta.parameters.rascal meta.block.rascal punctuation.definition.block.end.rascal
+#     ^^^ source.rascal meta.parameters.rascal meta.closure.rascal storage.type.basic.int.rascal
+#        ^ source.rascal meta.parameters.rascal meta.closure.rascal punctuation.whitespace.rascal
+#         ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#          ^^^ source.rascal meta.parameters.rascal meta.closure.rascal meta.parameters.rascal storage.type.basic.int.rascal
+#             ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#              ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#               ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal punctuation.definition.block.begin.rascal
+#                 ^^^^^^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal keyword.control.return.rascal
+#                       ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal punctuation.whitespace.rascal
+#                        ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal constant.numeric.decimal.rascal
+#                         ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal punctuation.whitespace.rascal
+#                          ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal keyword.operator.arithmetic.rascal
+#                           ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal punctuation.whitespace.rascal
+#                            ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal meta.qualified-name.rascal variable.other.rascal
+#                             ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal meta.return.rascal punctuation.terminator.statement.rascal
+#                              ^ source.rascal meta.parameters.rascal meta.closure.rascal meta.block.rascal punctuation.definition.block.end.rascal
 #                               ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
 #                                ^ source.rascal punctuation.terminator.statement.rascal
 >

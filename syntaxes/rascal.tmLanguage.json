@@ -582,6 +582,30 @@
 		"expression": {
 			"patterns": [
 				{ "include": "#concrete" },
+				{
+					"comment": "TODO: Support all types",
+					"begin": "(?=\\b(?:bag|bool|datetime|int|list|loc|lrel|map|node|num|rat|real|rel|set|str|tuple|value|void)\\s*(?:\\(|/[*/]|$))",
+					"end": "(?<=})|(?!\\s*(?:[({]|/[*/]|$)|\\G)",
+					"name": "meta.closure.rascal",
+					"patterns": [
+						{ "include": "#comment" },
+						{ "include": "#type-basic" },
+						{ "//include": "#type-type" },
+						{ "include": "#parameters" },
+						{
+							"begin": "{",
+							"end": "}",
+							"beginCaptures": { "0": { "name": "punctuation.definition.block.begin.rascal" } },
+							"endCaptures": { "0": { "name": "punctuation.definition.block.end.rascal" } },
+							"name": "meta.block.rascal",
+							"patterns": [
+								{ "include": "#variable-declaration" },
+								{ "include": "#function-declaration" },
+								{ "include": "#statement" }
+							]
+						}
+					]
+				},
 				{ "include": "#type-type" },
 				{
 					"match": "\\b(?:has|is|in|notin|mod|join|o)\\b",

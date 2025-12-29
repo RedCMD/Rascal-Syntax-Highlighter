@@ -1684,3 +1684,46 @@ public test bool \safePrio3() = parse(#Exp,"a*b*") is mul;
 '   '
 '   a'a
 "
+
+
+
+test bool moduleRenameProducesEdits()
+    = testProject({byText("Foo", "", {})},
+        "moduleRenameProducesEdits",
+        bool({TestModule foo}, loc testDir, PathConfig pcfg) {
+            loc oldLoc = foo.file;
+            loc newLoc = |<oldLoc.scheme>:///<oldLoc.parent.path>/nested/<oldLoc.file>|;
+
+            // VS Code moves first, and informs us afterwards
+            move(foo.file, newLoc);
+
+            <edits, msgs> = rascalRenameModule([<foo.file, newLoc>], toSet(pcfg.srcs), PathConfig(loc _) { return pcfg; });
+            throwMessagesIfError(msgs);
+            return [changed(newLoc, [replace(_, "nested::Foo")])] := edits;
+        }
+    );
+
+
+    job("Checking upstream dependencies", bool (void (str, int) step3) {
+        for (project <- upstreamDependencies) {
+            step3("Checked module in `<project.file>`", 1);
+            pcfg = getPathConfig(project);
+            checkOutdatedPathConfig(pcfg);
+            modulesToCheck = calculateOutdated(modulesPerProject[project], pcfg);
+            if (modulesToCheck != []) {
+                msgs += check(modulesToCheck, rascalCompilerConfig(pcfg));
+            }
+        }
+        return true;
+    }, totalWork=size(upstreamDependencies));
+
+
+
+&T job(str label, &T (void (str message, int worked) step) block, int totalWork=100) {
+  try {
+    jobStart(label, totalWork=totalWork);
+    return block(void (str message, int worked) { 
+      jobStep(label, message, work=worked);
+    });
+  }
+}
