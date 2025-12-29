@@ -1,6 +1,6 @@
 {
 	"name": "rascal-syntax-highlighter",
-	"displayName": "Rascal Syntax Highlighting extra spicy colours",
+	"displayName": "Rascal Syntax Highlighting",
 	"description": "Syntax Highlighting for Rascal",
 	"publisher": "RedCMD",
 	"version": "0.0.4",
