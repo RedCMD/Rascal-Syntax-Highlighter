@@ -21,7 +21,7 @@ jobs:
 
       - name: Install Dependencies # vsce etc
         run: | # shell
-          npm i @vscode/vsce -g
+          npm i
 
       - name: Setup Github Actions # allow use of `git push`
         run: | # shell
@@ -33,9 +33,9 @@ jobs:
       - name: Package Extension # `.vsix` file
         run: | # shell
           if [ ${{ github.event.inputs.version }} = "keep" ]; then
-            vsce package
+            npm run package
           else
-            vsce package ${{ github.event.inputs.version }}
+            npm run package --- ${{ github.event.inputs.version }}
           fi
           git push --follow-tags
           echo "VERSION=$(node -p "require('./package.json').version")" >> "$GITHUB_ENV"
@@ -48,6 +48,6 @@ jobs:
 
       - name: Publish Release # upload to Extension Marketplace
         run: | # shell
-          vsce publish --packagePath rascal-syntax-highlighter-$VERSION.vsix
+          npm run publish --- --packagePath rascal-syntax-highlighter-$VERSION.vsix
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
