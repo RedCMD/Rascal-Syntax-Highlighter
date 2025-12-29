@@ -1727,3 +1727,11 @@ test bool moduleRenameProducesEdits()
     });
   }
 }
+
+
+        println("What is read back, a <type(typeOf(readBack),())>:");
+bool readWrite(set[&T] dt) = readWrite(type(typeOf(dt), ()), dt);
+test bool dynamicTypesAreAlwaysGeneric(value v) = !(type[value] _ !:= type(typeOf(v),()));
+
+type[value] lub(type[&T] t, type[&T] u)
+     = type(lub(t.symbol, u.symbol), ());

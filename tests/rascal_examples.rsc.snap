@@ -20306,3 +20306,147 @@
 >}
 #^ source.rascal meta.function.rascal meta.block.rascal punctuation.definition.block.end.rascal
 >
+>
+>        println("What is read back, a <type(typeOf(readBack),())>:");
+#^^^^^^^^ source.rascal punctuation.whitespace.rascal
+#        ^^^^^^^ source.rascal meta.function-call.expression.rascal entity.name.function.rascal
+#               ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                ^ source.rascal meta.parameters.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
+#                 ^^^^^^^^^^^^^^^^^^^^^ source.rascal meta.parameters.rascal string.quoted.double.rascal
+#                                      ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal punctuation.definition.interpolation.begin.rascal
+#                                       ^^^^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal storage.type.type.rascal
+#                                           ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.begin.rascal
+#                                            ^^^^^^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal meta.function-call.expression.rascal entity.name.function.rascal
+#                                                  ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                                                   ^^^^^^^^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                                           ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                                            ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal punctuation.separator.comma.rascal
+#                                                             ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.begin.rascal
+#                                                              ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.end.rascal
+#                                                               ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.end.rascal
+#                                                                ^ source.rascal meta.parameters.rascal string.quoted.double.rascal meta.embedded.interpolation.rascal punctuation.definition.interpolation.end.rascal
+#                                                                 ^ source.rascal meta.parameters.rascal string.quoted.double.rascal
+#                                                                  ^ source.rascal meta.parameters.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
+#                                                                   ^ source.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                                                    ^ source.rascal punctuation.terminator.statement.rascal
+>bool readWrite(set[&T] dt) = readWrite(type(typeOf(dt), ()), dt);
+#^^^^ source.rascal storage.type.basic.bool.rascal
+#    ^ source.rascal punctuation.whitespace.rascal
+#     ^^^^^^^^^ source.rascal meta.function.rascal entity.name.function.rascal
+#              ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#               ^^^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal storage.type.basic.set.rascal
+#                  ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
+#                   ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal meta.type.ver.rascal punctuation.definition.type.rascal
+#                    ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal meta.type.ver.rascal entity.name.type.rascal
+#                     ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
+#                      ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                       ^^ source.rascal meta.function.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                         ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                          ^ source.rascal meta.function.rascal punctuation.whitespace.rascal
+#                           ^ source.rascal meta.function.rascal meta.assign.rascal keyword.operator.assignment.rascal
+#                            ^ source.rascal meta.function.rascal meta.assign.rascal punctuation.whitespace.rascal
+#                             ^^^^^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.function-call.expression.rascal entity.name.function.rascal
+#                                      ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                                       ^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal storage.type.type.rascal
+#                                           ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.begin.rascal
+#                                            ^^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal meta.function-call.expression.rascal entity.name.function.rascal
+#                                                  ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                                                   ^^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                                     ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                                      ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal punctuation.separator.comma.rascal
+#                                                       ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal punctuation.whitespace.rascal
+#                                                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.begin.rascal
+#                                                         ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.end.rascal
+#                                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.end.rascal
+#                                                           ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal punctuation.separator.comma.rascal
+#                                                            ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                                                             ^^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                                               ^ source.rascal meta.function.rascal meta.assign.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                                                ^ source.rascal meta.function.rascal punctuation.terminator.statement.rascal
+>test bool dynamicTypesAreAlwaysGeneric(value v) = !(type[value] _ !:= type(typeOf(v),()));
+#^^^^ source.rascal meta.function.rascal storage.modifier.function.test.rascal
+#    ^ source.rascal meta.function.rascal punctuation.whitespace.rascal
+#     ^^^^ source.rascal meta.function.rascal storage.type.basic.bool.rascal
+#         ^ source.rascal meta.function.rascal punctuation.whitespace.rascal
+#          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal meta.function.rascal meta.function-body.rascal entity.name.function.rascal
+#                                      ^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                                       ^^^^^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal storage.type.basic.value.rascal
+#                                            ^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                                             ^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                              ^ source.rascal meta.function.rascal meta.function-body.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                               ^ source.rascal meta.function.rascal punctuation.whitespace.rascal
+#                                                ^ source.rascal meta.function.rascal meta.assign.rascal keyword.operator.assignment.rascal
+#                                                 ^ source.rascal meta.function.rascal meta.assign.rascal punctuation.whitespace.rascal
+#                                                  ^ source.rascal meta.function.rascal meta.assign.rascal keyword.operator.logical.rascal
+#                                                   ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal punctuation.definition.group.begin.rascal
+#                                                    ^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.type.structured.rascal storage.type.basic.type.rascal
+#                                                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
+#                                                         ^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.type.structured.rascal meta.type.arguments.rascal storage.type.basic.value.rascal
+#                                                              ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
+#                                                               ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal punctuation.whitespace.rascal
+#                                                                ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.qualified-name.rascal variable.other.rascal
+#                                                                 ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal punctuation.whitespace.rascal
+#                                                                  ^^^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal keyword.operator.comparison.rascal
+#                                                                     ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal punctuation.whitespace.rascal
+#                                                                      ^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal storage.type.type.rascal
+#                                                                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.begin.rascal
+#                                                                           ^^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal meta.function-call.expression.rascal entity.name.function.rascal
+#                                                                                 ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                                                                                  ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                                                                   ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                                                                    ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal punctuation.separator.comma.rascal
+#                                                                                     ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.begin.rascal
+#                                                                                      ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.end.rascal
+#                                                                                       ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.end.rascal
+#                                                                                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.group.rascal punctuation.definition.group.end.rascal
+#                                                                                         ^ source.rascal meta.function.rascal punctuation.terminator.statement.rascal
+>
+>type[value] lub(type[&T] t, type[&T] u)
+#^^^^ source.rascal meta.type.structured.rascal storage.type.basic.type.rascal
+#    ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
+#     ^^^^^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal storage.type.basic.value.rascal
+#          ^ source.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
+#           ^ source.rascal punctuation.whitespace.rascal
+#            ^^^ source.rascal meta.function.rascal entity.name.function.rascal
+#               ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                ^^^^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal storage.type.basic.type.rascal
+#                    ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
+#                     ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal meta.type.ver.rascal punctuation.definition.type.rascal
+#                      ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal meta.type.ver.rascal entity.name.type.rascal
+#                       ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
+#                        ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                         ^ source.rascal meta.function.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                          ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.separator.comma.rascal
+#                           ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                            ^^^^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal storage.type.basic.type.rascal
+#                                ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.begin.rascal
+#                                 ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal meta.type.ver.rascal punctuation.definition.type.rascal
+#                                  ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal meta.type.ver.rascal entity.name.type.rascal
+#                                   ^ source.rascal meta.function.rascal meta.parameters.rascal meta.type.structured.rascal meta.type.arguments.rascal punctuation.definition.type.arguments.end.rascal
+#                                    ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                                     ^ source.rascal meta.function.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                      ^ source.rascal meta.function.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+>     = type(lub(t.symbol, u.symbol), ());
+#^^^^^ source.rascal meta.function.rascal punctuation.whitespace.rascal
+#     ^ source.rascal meta.function.rascal meta.assign.rascal keyword.operator.assignment.rascal
+#      ^ source.rascal meta.function.rascal meta.assign.rascal punctuation.whitespace.rascal
+#       ^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal storage.type.type.rascal
+#           ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.begin.rascal
+#            ^^^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.function-call.expression.rascal entity.name.function.rascal
+#               ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.begin.rascal
+#                ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                 ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.accessor.rascal
+#                  ^^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                        ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.separator.comma.rascal
+#                         ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.whitespace.rascal
+#                          ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                           ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.accessor.rascal
+#                            ^^^^^^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal meta.qualified-name.rascal variable.other.rascal
+#                                  ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.parameters.rascal punctuation.definition.parameters.end.rascal
+#                                   ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal punctuation.separator.comma.rascal
+#                                    ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal punctuation.whitespace.rascal
+#                                     ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.begin.rascal
+#                                      ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal meta.group.rascal punctuation.definition.group.end.rascal
+#                                       ^ source.rascal meta.function.rascal meta.assign.rascal meta.reified-type.rascal meta.reified.rascal punctuation.definition.reified.end.rascal
+#                                        ^ source.rascal meta.function.rascal punctuation.terminator.statement.rascal
+>
