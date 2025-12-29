@@ -353,7 +353,7 @@
 									"end": "\\)",
 									"beginCaptures": { "0": { "name": "punctuation.definition.arguments.begin.rascal" } },
 									"endCaptures": { "0": { "name": "punctuation.definition.arguments.end.rascal" } },
-									"name": "meta.arguments.rascal",
+									"name": "meta.type.arguments.rascal",
 									"patterns": [
 										{ "include": "#type-arg" },
 										{
@@ -1118,8 +1118,8 @@
 					"beginCaptures": { "0": { "name": "keyword.control.try.rascal" } },
 					"name": "meta.try.rascal",
 					"patterns": [
-						{ "include": "#function-declaration" },
 						{ "include": "#variable-declaration" },
+						{ "include": "#function-declaration" },
 						{ "include": "#statement" }
 					]
 				},
@@ -1134,8 +1134,8 @@
 							"end": "(?<=[;}])",
 							"beginCaptures": { "0": { "name": "punctuation.definition.section.case-statement.rascal" } },
 							"patterns": [
-								{ "include": "#function-declaration" },
 								{ "include": "#variable-declaration" },
+								{ "include": "#function-declaration" },
 								{ "include": "#statement" }
 							]
 						},
@@ -1722,7 +1722,7 @@
 						{
 							"begin": "\\(",
 							"end": "\\)",
-							"name": "meta.arguments.rascal",
+							"name": "meta.type.arguments.rascal",
 							"patterns": [ { "include": "#type-arg" } ]
 						},
 						{ "include": "#function-definition" },
@@ -2365,10 +2365,10 @@
 		"location": {
 			"begin": "\\|(?=[^\\s<|]*(?:://(?!\\s)|<[^>]*>)[^|]*\\|)",
 			"end": "\\|",
-			"name": "string.other.location.rascal",
-			"comment": "markup.underline.link.rascal",
 			"beginCaptures": { "0": { "name": "punctuation.definition.location.begin.rascal" } },
 			"endCaptures": { "0": { "name": "punctuation.definition.location.end.rascal" } },
+			"name": "string.other.location.rascal",
+			"comment": "markup.underline.link.rascal",
 			"patterns": [
 				{
 					"begin": "<",

@@ -4248,7 +4248,7 @@ solve(Var, Var, Var)
 // solve(Var~1~, Var~2~, ..., Var~n~)
   Statement
 
-solve(Var, Var, Var~n~; Exp)
+solve(Var, Var, Varn; Exp)
 // TODO:
 // solve(Var~1~, Var~2~, ..., Var~n~; Exp)
   Statement
@@ -4342,15 +4342,15 @@ fac(-1)
 
 
 try
-   Statement~1~
-catch Pattern~1~ :
-  Statement~2~
-catch Pattern~2~ : {
+   Statement1
+catch Pattern1 :
+  Statement2
+catch Pattern2 : {
   Statements
 }
 catch: 
-  Statement~3~
-finally Statement~4~
+  Statement3
+finally Statement4
 // TODO:
 // finally: Statement~4~
 

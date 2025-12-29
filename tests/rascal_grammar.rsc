@@ -349,11 +349,6 @@ syntax Assignment
 	| addition: "+=" 
 	| \append: "\<\<=" 
 	;
-syntax LocalVariableDeclaration
-	= \default: Declarator declarator 
-	| \dynamic: "dynamic" Declarator declarator ;
-syntax Declarator
-	= \default: Type type {Variable ","}+ variables ;
 syntax Label
 	= \default: Name name ":" 
 	| empty: ;
@@ -532,6 +527,11 @@ syntax KeywordFormal
     = \default: Type type Name name "=" Expression expression
     ;
 lexical OptionalComma = \default: ","? ;
+syntax LocalVariableDeclaration
+	= \default: Declarator declarator 
+	| \dynamic: "dynamic" Declarator declarator ;
+syntax Declarator
+	= \default: Type type {Variable ","}+ variables ;
 // Visit
 syntax Visit
 	= givenStrategy: Strategy strategy "visit" "(" Expression subject ")" "{" Case+ cases "}" 

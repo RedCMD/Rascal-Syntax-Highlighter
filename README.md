@@ -21,4 +21,6 @@ Please report all issues to https://github.com/RedCMD/Rascal-Syntax-Highlighter/
 ## For more information
 
 * [Rascal's Github Repos](https://github.com/usethesource)
+* [Rascal LSP Extension](https://marketplace.visualstudio.com/items?itemName=UseTheSource.rascalmpl)
 * [This Repository](https://github.com/RedCMD/Rascal-Syntax-Highlighter)
+* Old [Rascal tmbundle Grammar](https://github.com/usethesource/rascal-syntax-highlighting)

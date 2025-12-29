@@ -5838,67 +5838,6 @@
 >	;
 #^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
 # ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.terminator.statement.rascal
->syntax LocalVariableDeclaration
-#^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal keyword.control.rascal
-#      ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
-#       ^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal support.class.name.rascal
->	= \default: Declarator declarator 
-#^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
-# ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal
-#  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal constant.character.escape.rascal
-#    ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal
-#           ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.definition.label.rascal
-#            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#             ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal support.class.name.rascal
-#                       ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                        ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
-#                                  ^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
->	| \dynamic: "dynamic" Declarator declarator ;
-#^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-# ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal keyword.operator.associativity.rascal
-#  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal constant.character.escape.rascal
-#    ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal
-#           ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.definition.label.rascal
-#            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#             ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
-#              ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal string.quoted.double.rascal
-#                     ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
-#                      ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                       ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal support.class.name.rascal
-#                                 ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                                  ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
-#                                            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                                             ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.terminator.statement.rascal
->syntax Declarator
-#^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal keyword.control.rascal
-#      ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
-#       ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal support.class.name.rascal
->	= \default: Type type {Variable ","}+ variables ;
-#^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
-# ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal
-#  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal constant.character.escape.rascal
-#    ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal
-#           ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.definition.label.rascal
-#            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#             ^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal support.class.name.rascal
-#                 ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                  ^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
-#                      ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                       ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal
-#                        ^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal support.class.name.rascal
-#                                ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal punctuation.whitespace.rascal
-#                                 ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
-#                                  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal string.quoted.double.rascal
-#                                   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
-#                                    ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal
-#                                     ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal keyword.operator.quantifier.rascal
-#                                      ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                                       ^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
-#                                                ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
-#                                                 ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.terminator.statement.rascal
 >syntax Label
 #^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal keyword.control.rascal
 #      ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
@@ -8368,6 +8307,67 @@
 #                                     ^ source.rascal meta.module.rascal meta.lexical.rascal meta.production.rascal keyword.operator.quantifier.rascal
 #                                      ^ source.rascal meta.module.rascal meta.lexical.rascal meta.production.rascal punctuation.whitespace.rascal
 #                                       ^ source.rascal meta.module.rascal meta.lexical.rascal punctuation.terminator.statement.rascal
+>syntax LocalVariableDeclaration
+#^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal keyword.control.rascal
+#      ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
+#       ^^^^^^^^^^^^^^^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal support.class.name.rascal
+>	= \default: Declarator declarator 
+#^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
+# ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal
+#  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal constant.character.escape.rascal
+#    ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal
+#           ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.definition.label.rascal
+#            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#             ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal support.class.name.rascal
+#                       ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                        ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
+#                                  ^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+>	| \dynamic: "dynamic" Declarator declarator ;
+#^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+# ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal keyword.operator.associativity.rascal
+#  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal constant.character.escape.rascal
+#    ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal
+#           ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.definition.label.rascal
+#            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#             ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
+#              ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal string.quoted.double.rascal
+#                     ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
+#                      ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                       ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal support.class.name.rascal
+#                                 ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                                  ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
+#                                            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                                             ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.terminator.statement.rascal
+>syntax Declarator
+#^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal keyword.control.rascal
+#      ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
+#       ^^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal support.class.name.rascal
+>	= \default: Type type {Variable ","}+ variables ;
+#^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.whitespace.rascal
+# ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal
+#  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal constant.character.escape.rascal
+#    ^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.constant.rascal
+#           ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.definition.label.rascal
+#            ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#             ^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal support.class.name.rascal
+#                 ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                  ^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
+#                      ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                       ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal
+#                        ^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal support.class.name.rascal
+#                                ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal punctuation.whitespace.rascal
+#                                 ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal string.quoted.double.rascal punctuation.definition.string.begin.rascal
+#                                  ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal string.quoted.double.rascal
+#                                   ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal string.quoted.double.rascal punctuation.definition.string.end.rascal
+#                                    ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal meta.separate.rascal
+#                                     ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal keyword.operator.quantifier.rascal
+#                                      ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                                       ^^^^^^^^^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal variable.other.label.rascal
+#                                                ^ source.rascal meta.module.rascal meta.syntax.rascal meta.production.rascal punctuation.whitespace.rascal
+#                                                 ^ source.rascal meta.module.rascal meta.syntax.rascal punctuation.terminator.statement.rascal
 >// Visit
 #^^ source.rascal meta.module.rascal comment.line.rascal punctuation.definition.comment.rascal
 #  ^^^^^^ source.rascal meta.module.rascal comment.line.rascal
